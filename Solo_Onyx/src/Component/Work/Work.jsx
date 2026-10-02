@@ -35,7 +35,7 @@ const Work = () => {
 
       <div className="work-set">
 
-        <a href="https://savos.vervel.app" target="_blank" rel="noopener noreferrer">
+        <a href="https://savos.vercel.app" target="_blank" rel="noopener noreferrer">
         <div className="work-card" id='savos' title='Click to view'>
           <img src={SAVOS} className='image' alt="" />
           <p className="work-name">SAVOS</p>
@@ -50,7 +50,7 @@ const Work = () => {
         </div>
         </a>
 
-        <a href="https://presecengineering.vervel.app" target="_blank" rel="noopener noreferrer">
+        <a href="https://presecengineering.vercel.app" target="_blank" rel="noopener noreferrer">
         <div className="work-card" id='engineering' title='Click to view'>
           <img src={Engineering} className='image' alt="" />
           <p className="work-name">Presec Engineering Unit</p>
