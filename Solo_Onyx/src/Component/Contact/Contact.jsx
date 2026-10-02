@@ -31,42 +31,42 @@ const Contact = () => {
 
       <div className="contact-card">
         
-        <a href="https://www.snapchat.com/add/only4_mars?share_id=hov0N3l0qSA&locale=en-US">
+        <a href="https://www.snapchat.com/add/only4_mars?share_id=hov0N3l0qSA&locale=en-US" target="_blank" rel="noopener noreferrer">
         <div className="snap" title='Snapchat Profile Link'>
           <img src={Snapchat} className='contact-img'/>
           <p className='name' id='snap'>Snapchat</p>
         </div>
         </a>
 
-        <a href="mailto:solomonagbeko123@gmail.com">
+        <a href="mailto:solomonagbeko123@gmail.com" target="_blank" rel="noopener noreferrer">
         <div className="gmail" title='Gmail Profile Link'>
           <img src={Gmail} className='contact-img'/>
           <p className='name' id='gmail'>Gmail</p>
         </div>
         </a>
 
-        <a href="https://www.tiktok.com/@callme.solo.onyx?is_from_webapp=1&sender_device=pc">
+        <a href="https://www.tiktok.com/@callme.solo.onyx?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" >
         <div className="tiktok" title='Tiktok Profile Link'>
           <img src={Tiktok} className='contact-img'/>
           <p className='name' id='tiktok'>Tiktok</p>
         </div>
         </a>
 
-        <a href="https://www.linkedin.com/in/solomon-agbeko">
+        <a href="https://www.linkedin.com/in/solomon-agbeko" target="_blank" rel="noopener noreferrer">
         <div className="linkedin" title='LinkedIn Profile Link'>
           <img src={LinkedIn} className='contact-img'/>
           <p className='name' id='linkedin'>LinkedIn</p>
         </div>
         </a>
 
-        <a href="https://www.instagram.com/callme.sajnr/?hl=en">
+        <a href="https://www.instagram.com/callme.sajnr/?hl=en" target="_blank" rel="noopener noreferrer">
         <div className="instagram" title='Instagram Profile Link'>
           <img src={Instagram} className='contact-img'/>
           <p className='name' id='instagram'>Instagram</p>
         </div>
         </a>
 
-        <a href="https://discord.com/users/1445733381613555723">
+        <a href="https://discord.com/users/1445733381613555723" target="_blank" rel="noopener noreferrer">
         <div className="discord" title='Discord Profile Link'>
           <img src={Discord} className='contact-img'/>
           <p className='name' id='discord'>Discord</p>
@@ -74,14 +74,14 @@ const Contact = () => {
         </a>
 
 
-        <a href="https://github.com/SAjnr1">
+        <a href="https://github.com/SAjnr1" target="_blank" rel="noopener noreferrer" >
         <div className="github" title='Github Profile Link'>
           <img src={Github} className='contact-img'/>
           <p className='name' id='github'>Github</p>
         </div>
         </a>
 
-        <a href="https://wa.me/+233244244332">
+        <a href="https://wa.me/+233244244332" target="_blank" rel="noopener noreferrer" >
         <div className="whatsapp" title='WhatsApp Profile Link'>
           <img src={WhatsApp} className='contact-img'/>
           <p className='name' id='whatsapp'>WhatsApp</p>
