@@ -6,11 +6,10 @@
   overflow: hidden;
   min-height: 100vh;
   background: #0d1117;
-  padding: clamp(16px, 5vw, 50px);
+  padding: 50px;
 
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
 }
 
 #contact-particles {
@@ -50,10 +49,9 @@
   z-index: 1;
   display: grid;
   /* as many columns as fit, each at least 220px wide */
-  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-  gap: clamp(12px, 3vw, 24px);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
   max-width: 1000px;
-  width: 100%;
   margin: 0 auto;
   padding: 2rem 1rem;
   box-sizing: border-box;
@@ -140,8 +138,8 @@ a{
 }
 
 .contact-img {
-  width: clamp(44px, 10vw, 64px);
-  height: clamp(44px, 10vw, 64px);
+  width: 64px;              /* fixed size, so it never balloons */
+  height: 64px;
   object-fit: cover;
   border-radius: 12px;
   flex-shrink: 0;
@@ -151,7 +149,7 @@ a{
   flex: 1;              /* takes all the space beside the image */
   text-align: center;   /* centers the text horizontally in that space */
   margin: 0;
-  font-size: clamp(1.1rem, 4vw, 1.7rem);
+  font-size: 1.7rem;
   color: #ffffff;
   font-family: "Lobster", sans-serif;
   font-weight: 200;
@@ -170,28 +168,4 @@ a:hover{
     transform: perspective(1000px) rotateX(2deg) rotateY(-1deg) translateY(-7px);
     box-shadow: -18px 24px 30px rgba(0, 0, 0, 0.35);
     transition: 0.3s ease;
-}
-
-/* Small phones: single column, tighter spacing, no hover-lift (touch screens) */
-@media (max-width: 480px) {
-  .contact-card {
-    grid-template-columns: 1fr;
-    padding: 1rem 0;
-  }
-
-  .snap, .gmail, .instagram, .linkedin,
-  .tiktok, .whatsapp, .github, .discord {
-    padding: 12px;
-    border-radius: 16px;
-  }
-
-  a:hover{
-    transform: none;
-    box-shadow: none;
-  }
-
-  a:active{
-    transform: scale(0.97);
-    transition: 0.15s ease;
-  }
 }

@@ -8,8 +8,7 @@
   overflow: hidden;
   min-height: 100vh;
   background: #0d1117;
-  padding: 20px;
-
+  padding: 50px;
   display: flex;
   flex-direction: column;
 }

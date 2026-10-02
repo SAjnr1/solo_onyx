@@ -1,18 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Lobster&family=Outfit:wght@100..900&family=Playwrite+AR:wght@100..400&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Playwrite+AR:wght@100..400&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap');
-
-
 .work {
   position: relative;
   overflow: hidden;
   min-height: 100vh;
   background: #0d1117;
-  padding: clamp(16px, 5vw, 50px);
+  padding: 50px;
 
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
 }
 
 #work-particles {
@@ -50,20 +46,16 @@
 .work-set{
   display: grid;
     grid-template-columns: repeat(4, 1fr);  /* equal columns that can't grow past the page */
-    gap: clamp(16px, 4vw, 40px) clamp(10px, 3vw, 15px);   /* row gap, then column gap */
+    gap: 40px 15px;                         /* row gap, then column gap */
     justify-items: center;                  /* keeps cards centered in each column */
     width: 100%;
-    padding: clamp(1rem, 4vw, 2.5rem);
+    padding: 2.5rem;
     box-sizing: border-box;  
     z-index: 1;
-    position: relative;
 }
 
 .work-set a{
   text-decoration: none;
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .work-card{
@@ -92,9 +84,6 @@
     border-radius: 0 0 15px 15px;
     transition: transform 0.4s ease;
     text-decoration: none;
-    font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
 }
 
 /*.card:hover .img{ transform: translateZ(20px); }
@@ -107,7 +96,6 @@
     justify-content: center;
     display: flex;
     align-content: center;
-    align-items: center;
     text-align: center;
     border-radius: 0 0 10px 10px ;
     margin: 0;
@@ -117,22 +105,20 @@
   font-weight: 400;
   color: #ffffff;
   text-decoration: none;
-  font-size: clamp(0.75rem, 2vw, 1rem);
-  padding: 0 8px;
 }
 
 .play-icon{
   position: absolute;
   top: 50%;
   left: 50%;
-  width: clamp(44px, 10vw, 70px);
+  width: 70px;
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
 
 .play{
-  width: clamp(44px, 10vw, 70px);
-  height: clamp(44px, 10vw, 70px);
+  width: 70px;
+  height: 70px;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
@@ -210,11 +196,11 @@
 
 #engineering-model p{
   color: #ffffff;
-  font-size: clamp(11px, 2vw, 14px);
+  font-size: 14px;
 }
 
 
-@media (max-width: 1100px){
+@media (max-width: 1000px){
   .work-set{
     grid-template-columns: repeat(3, 1fr);
   }
@@ -224,41 +210,34 @@
   }
 }
 
-@media (max-width: 760px){
+@media (max-width: 900px){
   .work-set{
     grid-template-columns: repeat(2, 1fr);
   }
 
   .work-card{
-    max-width: 280px;
+    max-width: 250px;
   }
 }
 
-@media (max-width: 420px){
+@media (max-width: 600px){
   .work-set{
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px 10px;
   }
 
   .work-card{
-    max-width: 160px;
-  }
-
-  .image{
-    min-height: 8rem;
-  }
-
-  .work-name{
-    height: 32px;
+    max-width: 250px;
   }
 }
 
-@media (max-width: 320px){
+@media (max-width: 400px){
   .work-set{
     grid-template-columns: repeat(1, 1fr);
   }
 
   .work-card{
-    max-width: 220px;
+    max-width: 150px;
   }
+
+
 }

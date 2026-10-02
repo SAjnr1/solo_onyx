@@ -9,17 +9,21 @@
   font-style: normal;
   display: flex;
   align-items: center;
-    padding: 55px ;
-    justify-content: space-between;
-    text-decoration: none;
-    background-color: transparent;
-    justify-content: center;
+  justify-content: space-between;
+  text-decoration: none;
+  background-color: transparent;
+  justify-content: center;
+
 }
 
 .menu{
   position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%); 
   z-index: 1000;
-  width: 60%;
+  min-width: 30%;
+  gap: 30px;
   border-radius: 50px;
   display: flex;
   justify-content: space-between;
@@ -33,7 +37,7 @@
 }
 
 .menu:hover{
-  transform: none;
+  transform: translateX(-50%);
 }
 
 .nav{

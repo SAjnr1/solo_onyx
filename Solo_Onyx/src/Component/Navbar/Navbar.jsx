@@ -17,7 +17,7 @@ const Navbar = () => {
         </Link>
 
         <Link to='/work' className='nav' title='Works and Projects'>
-        <BriefcaseBusinessIcon/>
+        <BriefcaseBusinessIcon />
         </Link>
 
         <Link to='/contact' className='nav' title='Contact'>

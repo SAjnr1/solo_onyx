@@ -97,6 +97,7 @@ const Capabilities = () => {
       </div>
       <Footer/>
     </div>
+   
     </>
   )
 }
