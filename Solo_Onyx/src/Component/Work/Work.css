@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Lobster&family=Outfit:wght@100..900&family=Playwrite+AR:wght@100..400&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Playwrite+AR:wght@100..400&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap');
+.work {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background: #0d1117;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#work-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.heading {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.heading h1 {
+  color: #ffffff;
+}
+
+.heading h1 span{
+  color: rgb(0, 247, 255);
+    font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+}
+
+.caption p{
+    text-align: center;
+    color: white;
+    z-index: 1;
+    position: relative;
+    padding: 15px;
+}
+
+.work-set{
+  display: grid;
+    grid-template-columns: repeat(4, 1fr);  /* equal columns that can't grow past the page */
+    gap: 40px 15px;                         /* row gap, then column gap */
+    justify-items: center;                  /* keeps cards centered in each column */
+    width: 100%;
+    padding: 2.5rem;
+    box-sizing: border-box;  
+    z-index: 1;
+}
+
+.work-set a{
+  text-decoration: none;
+}
+
+.work-card{
+  width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    /* no overflow: hidden here, see note below */
+    transform-style: preserve-3d;
+    transform: perspective(800px) rotateX(0deg) rotateY(-8deg);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    text-transform: none;
+}
+
+.image{
+  display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+    transition: transform 0.4s ease;
+    min-height: 13rem;
+}
+
+.work-card p{
+    /* keep your existing styles, plus: */
+    border-radius: 0 0 15px 15px;
+    transition: transform 0.4s ease;
+    text-decoration: none;
+}
+
+/*.card:hover .img{ transform: translateZ(20px); }
+.card:hover p{ transform: translateZ(20px); }*/
+
+
+.work-name {
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    border-radius: 0 0 10px 10px ;
+    margin: 0;
+    font-family: "Playwrite GB J", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.play-icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.play{
+  width: 70px;
+  height: 70px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  color: #00ffff;
+}
+
+#savos{
+  background: red;
+}
+
+#engineering{
+  background: #0044ff;
+}
+
+#black_star_gate{
+  background: #ecfa6d;
+}
+
+#black_star_gate p{
+  color: #000000;
+}
+
+#wiseman{
+  background: #9600fa;
+}
+
+#wiseman p{
+  color: #ffffff;
+}
+
+#stranger{
+  background: #ffffff;
+}
+
+#stranger p{
+  color: #000000;
+}
+
+#frieren{
+  background: #019aff;
+}
+
+#frieren p{
+  color: #ffffff;
+}
+
+#gachiakuta{
+  background: #990000;
+}
+
+#gachiakuta p{
+  color: #ffffff;
+}
+
+#ragna{
+  background: #4e4e4e;
+}
+
+#ragna p{
+  color: #ffffff;
+}
+
+#sajnr{
+  background: #ffffff;
+}
+
+#sajnr p{
+  color: #000000;
+}
+
+#engineering-model{
+  background: #0A4B38;
+}
+
+#engineering-model p{
+  color: #ffffff;
+  font-size: 14px;
+}
+
+
+@media (max-width: 1000px){
+  .work-set{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #black_star_gate {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 750px){
+  .work-set{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work-card{
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 600px){
+  .work-set{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work-card{
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 400px){
+  .work-set{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .work-card{
+    max-width: 150px;
+  }
+
+
+}

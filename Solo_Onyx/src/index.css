@@ -1,0 +1,29 @@
+* { 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family: 'JetBrains Mono', ui-monospace, monospace;;*/
+ }
+html, body { margin: 0;} /* background: #05070a; color: #e6fff0; */
+body { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+
+/* Placeholder pages the cards link to */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6vh 8vw;
+}
+.page h1 { font-size: clamp(2rem, 5vw, 3.4rem); margin: 0 0 1rem; color: #5dffa0; }
+.page p { color: #6b8a78; max-width: 46ch; line-height: 1.6; margin: 0 0 2rem; }
+.page a {
+  align-self: flex-start;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid #5dffa0;
+  color: #5dffa0;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+.page a:hover { background: #5dffa0; color: #05070a; }

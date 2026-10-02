@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Lobster&family=Outfit:wght@100..900&family=Playwrite+AR:wght@100..400&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Playwrite+AR:wght@100..400&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&display=swap');
+
+.contact {
+   position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background: #0d1117;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.heading {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.heading h1 {
+  color: #ffffff;
+}
+
+.heading h1 span{
+  color: rgb(0, 247, 255);
+    font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+}
+
+.caption p{
+    text-align: center;
+    color: white;
+    z-index: 1;
+    position: relative;
+    padding: 15px;
+}
+
+.contact-card {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  /* as many columns as fit, each at least 220px wide */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+a{
+    background: none;
+}
+
+.snap {
+  display: flex;
+  align-items: center;      /* centers image and name vertically */
+  gap: 16px;
+  background: #f6fa01;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+.gmail {
+  display: flex;
+  align-items: center;      /* centers image and name vertically */
+  gap: 16px;
+  background: #faa301;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+.instagram {
+  display: flex;
+  align-items: center;      /* centers image and name vertically */
+  gap: 16px;
+  background: #8134AF;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+.linkedin {
+  display: flex;
+  align-items: center;      /* centers image and name vertically */
+  gap: 16px;
+  background:#0072b1;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+
+.tiktok {
+  display: flex;
+  align-items: center;      /* centers image and name vertically */
+  gap: 16px;
+  background: rgb(7, 7, 7);
+  padding: 16px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.whatsapp {
+  display: flex;
+  align-items: center;      /* centers image and name vertically */
+  gap: 16px;
+  background: #1ef56d;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+.github {
+  display: flex;
+  align-items: center;      /* centers image and name vertically */
+  gap: 16px;
+  background: rgb(7, 7, 7);
+  padding: 16px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.discord {
+  display: flex;
+  align-items: center;      /* centers image and name vertically */
+  gap: 16px;
+  background:  #5865F2;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+.contact-img {
+  width: 64px;              /* fixed size, so it never balloons */
+  height: 64px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.name {
+  flex: 1;              /* takes all the space beside the image */
+  text-align: center;   /* centers the text horizontally in that space */
+  margin: 0;
+  font-size: 1.7rem;
+  color: #ffffff;
+  font-family: "Lobster", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+#snap, #gmail, #whatsapp{
+    color: black;
+}
+
+.contact-card a{
+    text-decoration: none;
+}
+
+a:hover{
+    transform: perspective(1000px) rotateX(2deg) rotateY(-1deg) translateY(-7px);
+    box-shadow: -18px 24px 30px rgba(0, 0, 0, 0.35);
+    transition: 0.3s ease;
+}

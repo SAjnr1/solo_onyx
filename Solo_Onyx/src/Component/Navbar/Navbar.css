@@ -1,0 +1,43 @@
+.navbar{
+     position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #0d1117;
+  color: #e6fff0;
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+    padding: 55px ;
+    justify-content: space-between;
+    text-decoration: none;
+    background-color: transparent;
+    justify-content: center;
+}
+
+.menu{
+  position: fixed;
+  z-index: 1000;
+  width: 60%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  background: rgba(1, 247, 255, 0.308);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(2, 255, 242, 0.705);
+}
+
+.nav{
+    text-decoration: none;
+    color: white;
+}
+
+.menu:hover,
+.nav:hover{
+   transform: perspective(5000px)  translateY(-1px);
+} 
