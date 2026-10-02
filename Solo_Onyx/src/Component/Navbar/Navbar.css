@@ -30,10 +30,10 @@
   padding: 20px;
   text-decoration: none;
   color: white;
-  background: rgba(1, 247, 255, 0.308);
+  background: rgba(1, 48, 255, 0.568);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(2, 255, 242, 0.705);
+  border: 1px solid rgba(6, 2, 255, 0.705);
 }
 
 .menu:hover{
