@@ -32,12 +32,15 @@
   border: 1px solid rgba(2, 255, 242, 0.705);
 }
 
+.menu:hover{
+  transform: none;
+}
+
 .nav{
     text-decoration: none;
     color: white;
 }
 
-.menu:hover,
 .nav:hover{
    transform: perspective(5000px)  translateY(-1px);
 } 

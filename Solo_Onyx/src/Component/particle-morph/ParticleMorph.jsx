@@ -11,21 +11,21 @@ const FONT = '"JetBrains Mono", monospace';
 
 export const DEFAULT_SECTIONS = [
   { shape: 'intro', hero: true, /* label: '00 / SOLO ONYX', */ title: "Solomon Agbeko",
-    text: 'Your normal 3D modeler, graphics designer and video editor' },
+    text: 'A little bit of coding, a little bit of engineering, a lot of creativity. Why choose one thing when I can struggle with six?' },
   { shape: 'sphere',/* label: '01 / SPHERE', */ title: '3D Modeller',
-    text: 'Points step evenly from pole to pole, rotating by the golden angle each time: no clumping, no visible seams.' },
+    text: 'I turn ideas, concepts, and imagination into detailed 3D models that can be visualized and brought to life.' },
   { shape: 'gear',/* label: '02 / GEAR', */ title: 'Structural Design and Assembling',
-    text: 'Sampled off an extruded gear profile, teeth and bore included, rather than a pure parametric formula.' },
+    text: 'I enjoy designing physical structures, figuring out how components fit together, and turning digital designs into working builds.' },
   { shape: 'torus',/* label: '03 / TORUS', */title: 'Arduino Programmer',
-    text: "The shape change is still eased. It's the trigger that's different: a snap point, not a fraction of the page." },
+    text: "Writing code that connects hardware, sensors, and electronics to create interactive systems and practical projects." },
   { shape: 'screw',/* label: '04 / SCREW', */ title: 'Robotics Personelle',
-    text: 'A shaft, a helical thread wrapped around it, and a wider head on top, sharing one particle budget.' },
+    text: 'Designing, programming, and experimenting with robots to understand how technology can solve real-world problems.' },
   { shape: 'knot',/* label: '05 / TORUS KNOT', */ title: 'STEM personelle',
-    text: 'The interpolation gives a slight overshoot-and-settle, closer to a physical spring than a linear scrub.' },
+    text: 'Passionate about exploring science, technology, engineering, and mathematics while constantly learning and creating new things.' },
   { shape: 'cube', /*label: '06 / CUBE', */ title: 'Just your normal STEM boy and.......',
-    text: 'Points redistribute onto six flat faces, the simplest shape in the library.' },
+    text: 'Always curious, always experimenting, and usually trying to build something that probably started as a random idea.' },
   { shape: 'ico', /* label: '07 / ICOSAHEDRON', */ title: '...a regular anime lover',
-    text: 'Same particle system and shape library, just a different relationship between your scroll and the motion.' },
+    text: 'When I’m not coding, designing, or building something, you’ll probably find me watching anime and getting way too invested in the story. 😭' },
 ];
 
 export const DEFAULT_CARDS = [

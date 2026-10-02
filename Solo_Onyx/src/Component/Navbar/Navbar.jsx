@@ -8,19 +8,19 @@ const Navbar = () => {
     <div className='navbar'>
       <div className="menu">
 
-        <Link to='/' className='nav'>
-        <Home/>
+        <Link to='/' className='nav' title='Home'>
+        <Home />
         </Link>
 
-        <Link to='/capabilities' className='nav'>
+        <Link to='/capabilities' className='nav' title='Capabilities'>
         <SparklesIcon/>
         </Link>
 
-        <Link to='/work' className='nav'>
+        <Link to='/work' className='nav' title='Works and Projects'>
         <BriefcaseBusinessIcon/>
         </Link>
 
-        <Link to='/contact' className='nav'>
+        <Link to='/contact' className='nav' title='Contact'>
         <Send/>
         </Link>
 
